@@ -1,15 +1,8 @@
-/* @font-face {
-    font-family: 'ITC Avant Garde Gothic';
-    src: url('path/to/your/fontfile.woff2') format('woff2'),
-         url('path/to/your/fontfile.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-} */
 
 body {
   	margin: 0;
   	line-height: normal;
-    font-family: "Poppins", sans-serif;
+    font-family: "Libre Caslon Text", sans-serif;
 }
 
 /*div {
@@ -149,13 +142,13 @@ body {
 .logo_signature_name {
     color: #e25599;
   	font-size: 14px;
-  	font-family: 'ITC Avant Garde Gothic';
+  	font-family: 'Poppins';
   	font-weight: bold;
   	white-space: nowrap;
 }
 .logo_signature_title {
   	color: #000;
-    font-family: 'Adobe Caslon Pro';
+    font-family: 'Libre Caslon Text';
     font-weight: normal;
     white-space: nowrap;
 }
