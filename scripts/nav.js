@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const bannerImg = document.querySelector('.banner_img');
   if (bannerImg) {
     let showingFirst = true;
-    const img1 = 'images/content/banner.png';
-    const img2 = 'images/content/banner2.png';
+    const img1 = 'images/content/netflix/banner.png';
+    const img2 = 'images/content/netflix/banner2.png';
     bannerImg.style.transition = 'opacity 3.5s';
     function swapBanner() {
       // Fade out smoothly

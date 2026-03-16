@@ -1,0 +1,319 @@
+.home-page {
+  	width: 100%;
+  	height: 2340px;
+  	position: relative;
+  	background-color: #fff;
+  	overflow: hidden;
+  	text-align: center;
+  	font-size: 24px;
+  	color: #231f20;
+  	font-family: 'ITC Avant Garde Gothic';
+}
+.home-page-inner {
+  	position: absolute;
+  	top: 244.55px;
+  	left: 150px;
+  	width: 1212px;
+  	height: 2035.3px;
+}
+.works-wrapper {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 1212px;
+  	height: 2035.3px;
+}
+.works {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 1212px;
+  	display: flex;
+  	align-items: flex-start;
+  	justify-content: center;
+  	flex-wrap: wrap;
+  	align-content: flex-start;
+  	gap: 60px 30px;
+}
+.works-4-parent {
+  	height: 1817px;
+  	display: grid;
+  	justify-content: start;
+  	align-content: start;
+  	gap: 0px;
+}
+.works-4 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 591px;
+  	height: 467px;
+  	overflow: hidden;
+  	cursor: pointer;
+  	flex-shrink: 0;
+}
+.image-icon {
+  	position: absolute;
+  	height: 79.04%;
+  	width: 100%;
+  	top: 0%;
+  	right: 0%;
+  	bottom: 20.96%;
+  	left: 0%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+  	object-fit: cover;
+}
+.delfinaland {
+  	position: absolute;
+  	width: 43.98%;
+  	top: calc(50% + 155.63px);
+  	left: 28.1%;
+  	letter-spacing: -0.5px;
+  	line-height: 34px;
+  	display: inline-block;
+}
+.works-6 {
+  	position: absolute;
+  	top: 0px;
+  	left: 621px;
+  	width: 591px;
+  	height: 467px;
+  	overflow: hidden;
+  	cursor: pointer;
+  	flex-shrink: 0;
+}
+.delfinaland2 {
+  	position: absolute;
+  	width: 72.62%;
+  	top: calc(50% + 155.63px);
+  	left: 13.78%;
+  	letter-spacing: -0.5px;
+  	line-height: 34px;
+  	display: inline-block;
+  	height: 68px;
+}
+.works-7 {
+  	position: absolute;
+  	top: 467px;
+  	left: 0px;
+  	width: 591px;
+  	height: 467px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.buckridgeburgh {
+  	position: absolute;
+  	width: 73.32%;
+  	top: calc(50% + 155.63px);
+  	left: 13.34%;
+  	letter-spacing: -0.5px;
+  	line-height: 34px;
+  	display: inline-block;
+}
+.works-12 {
+  	position: absolute;
+  	top: 467px;
+  	left: 621px;
+  	width: 591px;
+  	height: 467px;
+  	overflow: hidden;
+  	cursor: pointer;
+  	flex-shrink: 0;
+}
+.buckridgeburgh2 {
+  	position: absolute;
+  	width: 100%;
+  	top: calc(50% + 155.63px);
+  	left: 0%;
+  	letter-spacing: -0.5px;
+  	line-height: 34px;
+  	display: inline-block;
+}
+.works-14 {
+  	position: absolute;
+  	top: 934px;
+  	left: 0px;
+  	width: 591px;
+  	height: 467px;
+  	overflow: hidden;
+  	cursor: pointer;
+  	flex-shrink: 0;
+}
+.image {
+  	position: absolute;
+  	height: 79.04%;
+  	width: 100%;
+  	top: 0%;
+  	right: 0%;
+  	bottom: 20.96%;
+  	left: 0%;
+}
+.image-icon5 {
+  	position: absolute;
+  	height: 100%;
+  	width: 100%;
+  	top: 0%;
+  	right: 0%;
+  	bottom: 0%;
+  	left: 0%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+  	object-fit: cover;
+}
+.works-13 {
+  	position: absolute;
+  	top: 934px;
+  	left: 621px;
+  	width: 591px;
+  	height: 467px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.works-15 {
+  	position: absolute;
+  	top: 1401px;
+  	left: 0px;
+  	width: 591px;
+  	height: 467px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.group-parent {
+  	height: 158.3px;
+  	width: 1213.1px;
+  	position: relative;
+  	text-align: left;
+  	font-size: 16px;
+}
+.group-wrapper {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 1213.1px;
+  	height: 158.3px;
+}
+.header {
+  	position: absolute;
+  	top: 138.29px;
+  	left: 935.1px;
+  	width: 278px;
+  	height: 20px;
+}
+.linkedin {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	font-weight: 500;
+}
+.l {
+  	text-transform: uppercase;
+}
+.inkedin {
+  	text-transform: capitalize;
+}
+.instagram {
+  	position: absolute;
+  	top: 0px;
+  	left: 97.5px;
+  	text-transform: capitalize;
+  	font-weight: 500;
+}
+.booking {
+  	position: absolute;
+  	top: 0px;
+  	left: 214px;
+  	text-transform: capitalize;
+  	font-weight: 500;
+}
+.group-child {
+  	position: absolute;
+  	top: 0px;
+  	left: calc(50% - 606.55px);
+  	border-top: 1px solid #231f20;
+  	box-sizing: border-box;
+  	width: 1213px;
+  	height: 1px;
+}
+.layer-1-icon {
+  	position: absolute;
+  	top: 31.74px;
+  	left: calc(50% - 606.55px);
+  	width: 126px;
+  	height: 122px;
+  	object-fit: cover;
+}
+.anna-leonard-visual-container {
+  	position: absolute;
+  	top: 100.98px;
+  	left: 177.06px;
+  	text-transform: capitalize;
+  	display: inline-block;
+  	width: 219.6px;
+  	height: 52px;
+  	color: #e25599;
+}
+.visual-communicator-uxui {
+  	font-family: 'Adobe Caslon Pro';
+  	color: #000;
+}
+.visual-communicator {
+  	color: #000;
+}
+.span {
+  	color: #e25599;
+}
+.header-group {
+  	position: absolute;
+  	top: 60px;
+  	left: calc(50% - 606px);
+  	width: 1212px;
+  	height: 124.2px;
+  	text-align: left;
+  	font-size: 14px;
+}
+.header2 {
+  	position: absolute;
+  	top: 106.17px;
+  	left: calc(50% + 117px);
+  	display: flex;
+  	align-items: flex-start;
+  	gap: 46px;
+}
+.uxui-design {
+  	position: relative;
+  	text-transform: uppercase;
+}
+.graphic-design {
+  	position: relative;
+  	text-transform: uppercase;
+  	font-weight: 500;
+  	cursor: pointer;
+}
+.booking2 {
+  	position: relative;
+  	text-transform: uppercase;
+  	font-weight: 500;
+}
+.layer-1-icon2 {
+  	position: absolute;
+  	top: 0px;
+  	left: calc(50% - 606px);
+  	width: 126px;
+  	height: 122px;
+  	object-fit: cover;
+}
+.anna-leonard-visual-container2 {
+  	position: absolute;
+  	top: 69.34px;
+  	left: 177px;
+  	font-size: 16px;
+  	text-transform: capitalize;
+  	display: inline-block;
+  	width: 219px;
+  	height: 52px;
+  	color: #e25599;
+}
+

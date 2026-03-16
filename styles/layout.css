@@ -11,9 +11,9 @@ body {
     font-family: "adobe-caslon-pro", "Libre Caslon Text", serif;
 }
 
-/*div {
+div {
   border: 1px dotted pink;
-}*/
+}
 
 .page_container {
   display: grid;
