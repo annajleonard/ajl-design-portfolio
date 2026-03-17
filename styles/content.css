@@ -28,6 +28,7 @@
     width: auto;
 }
 .project_container {
+    column-gap: 50px;
     grid-template-rows: repeat(2, auto);
     @media (max-width: 1030px) {
         padding: 0 10%;
@@ -39,15 +40,27 @@
     grid-column-start: 2;
     grid-column-end: 10;
 }
+.project_header h1 {
+    font-size: 2.5rem;
+}
 .project_left {
     grid-row-start: 2;
     grid-row-end: 2;
     grid-column-start: 2;
     grid-column-end: 5;
+    min-width: min-content;
     @media (max-width: 1030px) {
         grid-column-start: 1;
         grid-column-end: 11;
     }
+}
+.project_left h1,
+.project_left h2,
+.project_left h3,
+.project_left h4,
+.project_left h5,
+.project_left h6 {
+    white-space: nowrap;
 }
 .project_right {
     grid-row-start: 2;
@@ -162,6 +175,12 @@
     object-fit: cover;
     display: block;
     border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.works_icon:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 .works a {
