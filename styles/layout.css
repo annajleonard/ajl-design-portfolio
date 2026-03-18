@@ -148,13 +148,13 @@ body {
 .logo_signature_name {
     color: #e25599;
   	font-size: 14px;
-  	font-family: 'Poppins';
+  	font-family: "itc-avant-garde-gothic-pro", "Poppins", sans-serif;
   	font-weight: bold;
   	white-space: nowrap;
 }
 .logo_signature_title {
   	color: #000;
-    font-family: 'Libre Caslon Text';
+    font-family: "adobe-caslon-pro", "Libre Caslon Text", serif;
     font-weight: normal;
     white-space: nowrap;
 }
