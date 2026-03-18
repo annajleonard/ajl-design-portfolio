@@ -62,6 +62,12 @@
 .project_left h6 {
     white-space: nowrap;
 }
+.project_left img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: contain;
+}
 .project_right {
     grid-row-start: 2;
     grid-row-end: 2;
