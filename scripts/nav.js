@@ -1,23 +1,37 @@
 // Fade transition for banner image
+// Opt in per page by adding data-banner-images on the .banner_img element:
+//   <img class="banner_img" src="first.png" data-banner-images='["first.png","second.png"]'>
+// Omit the attribute (or provide fewer than 2 images) to disable the transition.
 document.addEventListener('DOMContentLoaded', function() {
   const bannerImg = document.querySelector('.banner_img');
-  if (bannerImg) {
-    let showingFirst = true;
-    const img1 = 'images/content/netflix/banner.png';
-    const img2 = 'images/content/netflix/banner2.png';
-    bannerImg.style.transition = 'opacity 3.5s';
-    function swapBanner() {
-      // Fade out smoothly
-      bannerImg.style.opacity = 0.5;
-      setTimeout(() => {
-        bannerImg.src = showingFirst ? img2 : img1;
-        showingFirst = !showingFirst;
-        // Fade in smoothly
-        bannerImg.style.opacity = 1;
-      }, 2500);
-    }
-    setInterval(swapBanner, 7000);
+  if (!bannerImg) return;
+
+  const raw = bannerImg.dataset.bannerImages;
+  if (!raw) return;
+
+  let images;
+  try {
+    images = JSON.parse(raw);
+  } catch (e) {
+    console.warn('banner_img: data-banner-images must be a valid JSON array.', e);
+    return;
   }
+
+  if (!Array.isArray(images) || images.length < 2) return;
+
+  let currentIndex = 0;
+  bannerImg.style.transition = 'opacity 3.5s';
+
+  function swapBanner() {
+    bannerImg.style.opacity = 0.5;
+    setTimeout(() => {
+      currentIndex = (currentIndex + 1) % images.length;
+      bannerImg.src = images[currentIndex];
+      bannerImg.style.opacity = 1;
+    }, 2500);
+  }
+
+  setInterval(swapBanner, 7000);
 });
 // Custom smooth scroll for side_navbar links and #sidehome (slower speed)
 document.addEventListener('DOMContentLoaded', function() {
