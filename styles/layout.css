@@ -87,7 +87,7 @@ body {
   grid-row-end: 4;
   grid-column-start: 2;
   grid-column-end: 10;
-  margin: 100px 0px 100px 0px;
+  margin: 50px 0px 50px 0px;
 }
 .bot_right {
   grid-row-start: 4;
