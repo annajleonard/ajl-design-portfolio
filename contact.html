@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <title>Contact | Anna Leonard</title>
     <meta name="viewport" content="initial-scale=1, width=device-width">
     <link rel="stylesheet" href="styles/layout.css"/>
     <link rel="stylesheet" href="styles/nav.css"/>
     <link rel="stylesheet" href="styles/content.css"/>
+    <script src="scripts/contact.js"></script>
     <script src="scripts/nav.js"></script>
     <script src="scripts/filter.js"></script>
 </head>
@@ -17,7 +20,7 @@
         <div class="hdr_container">
             <div class="logo_container">
                 <a href="./index.html" title="HOME">
-                    <img class="logo_icon" src="icons/header/logo.svg" >
+                    <img class="logo_icon" src="icons/header/logo.svg" alt="Anna Leonard logo">
                 </a>
                 <div class="logo_signature">
                     <b class="logo_signature_name">Anna Leonard</b>
@@ -53,22 +56,48 @@
         </div>
     </div>
     <div class="hdr_right"></div>
-    <div class="mid_left">
-    </div>
+    <div class="mid_left"></div>
     <div class="mid_mid">
-        <h1>Contact</h1>
+        <div class="text_section_container">
+            <div class="text_section">
+                <h1>Contact</h1>
+                <br>
+                <form id="contactForm" class="contact-form">
+                    <div class="contact-form__field">
+                        <label class="contact-form__label" for="name">Your Name:</label>
+                        <input class="contact-form__input" type="text" id="name" name="name" required>
+                    </div>
+        
+                    <div class="contact-form__field">
+                        <label class="contact-form__label" for="email">Your Email:</label>
+                        <input class="contact-form__input" type="email" id="email" name="email" required>
+                    </div>
+        
+                    <div class="contact-form__field">
+                        <label class="contact-form__label" for="message">Your Message:</label>
+                        <textarea class="contact-form__input contact-form__textarea" id="message" name="message" rows="10" required></textarea>
+                    </div>
+        
+                    <div class="contact-form__honeypot" aria-hidden="true">
+                        <label for="websiteField">Leave this field empty</label>
+                        <input type="text" id="websiteField" name="website" tabindex="-1" autocomplete="off">
+                    </div>
+        
+                    <button class="contact-form__button" type="submit">Submit</button>
+                </form>
+                <br>
+                <div id="status" class="contact-form__status" aria-live="polite"></div>
+            </div>
+        </div>
     </div>
     <div class="mid_right">
-        <a href="#sidehome"><img class="nav_return" src="icons/nav/nav_return.svg"></a>
-    </div>
-    <div class="bot_left">&nbsp;</div>
-    <div class="bot_mid">
+        <a href="#sidehome"><img class="nav_return" src="icons/nav/nav_return.svg" alt="Return to top"></a>
     </div>
     <div class="footer_left">&nbsp;</div>
     <div class="footer_mid">
         <div class="ftr_container">
             <div class="ftr_logo_container">
-                <img class="logo_icon" src="icons/header/logo.svg" >
+                <img class="logo_icon" src="icons/header/logo.svg" alt="Anna Leonard logo">
             </div>
             <nav class="ftr_navbar">
                 <ul>
