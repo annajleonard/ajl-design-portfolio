@@ -227,6 +227,9 @@ body {
     display: block;
     padding: 15px 0px;
   }
+  .logo_bullet {
+  	color: #e25599;
+}
   .menu_container, .ftr_container  {
     flex: 0;
     flex-direction: column;
