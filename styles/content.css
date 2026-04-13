@@ -226,6 +226,11 @@
     color: inherit !important;
 }
 
+.rounded-video {
+    max-height: 500px;
+    border-radius: 40px;
+    display: block;
+}
 .contact-form {
     display: flex;
     flex-direction: column;
