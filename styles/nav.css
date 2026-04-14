@@ -26,7 +26,7 @@
   white-space: nowrap;
   color: #231F20;
   font-size: 14px;
-  font-family: 'ITC Avant Garde Gothic', sans-serif;
+  font-family: itc-avant-garde-gothic-pro, Poppins, sans-serif;
 }
 
 .main_navbar li a:hover {
@@ -42,7 +42,8 @@
 
 .side_navbar {
   flex: 1;
-  margin: 50px 0 0; /* For Safari support */
+  margin: 50px 0 0 0;
+  position: -webkit-sticky; /* For Safari support */
   position: sticky;
   top: 0;
   overflow-y: auto;
@@ -73,7 +74,7 @@
   white-space: nowrap;
   color: #231F20;
   font-size: 14px;
-  font-family: 'ITC Avant Garde Gothic', sans-serif;
+  font-family: itc-avant-garde-gothic-pro, Poppins, sans-serif;
 }
 
 .side_navbar li a:hover {
@@ -83,7 +84,8 @@
 
 .nav_return {
   flex: 1;
-  margin: 0; /* For Safari support */
+  margin: 0;
+  position: -webkit-sticky; /* For Safari support */
   position: sticky;
   top: calc(100vh - 100px);
   overflow-y: auto;
@@ -118,7 +120,7 @@
   white-space: nowrap;
   color: #231F20;
   font-size: 14px;
-  font-family: 'ITC Avant Garde Gothic', sans-serif;
+  font-family: itc-avant-garde-gothic-pro, Poppins, sans-serif;
 }
 
 .ftr_navbar li a:hover {
@@ -186,7 +188,7 @@
   text-decoration: none;
   color: #231F20;
   font-size: 14px;
-  font-family: 'ITC Avant Garde Gothic', sans-serif;
+  font-family: itc-avant-garde-gothic-pro, Poppins, sans-serif;
 }
 
 #nav_menu ul li a:hover {
@@ -214,7 +216,7 @@
   }
 
   .main_navbar li {
-    padding: 10px 0 0;
+    padding: 10px 0 0 0;
   }
 }
 
