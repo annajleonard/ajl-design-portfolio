@@ -26,13 +26,14 @@
   white-space: nowrap;
   color: #231F20;
   font-size: 14px;
-  font-family: 'ITC Avant Garde Gothic';
+  font-family: itc-avant-garde-gothic-pro, Poppins, sans-serif;
 }
 
 .main_navbar li a:hover {
   text-decoration: underline;
   text-shadow: 0 0 1px #333;
 }
+
 .main_navbar li a.active {
   color: #E25599;
   font-weight: bold;
@@ -47,6 +48,7 @@
   top: 0;
   overflow-y: auto;
 }
+
 .side_navbar ul {
   list-style-type: none;
   margin: 0;
@@ -57,10 +59,12 @@
   align-items: center;
   white-space: nowrap;
 }
+
 .side_navbar li {
   display: inline-block;
   padding: 0;
 }
+
 .side_navbar a {
   display: inline-block;
   padding: 20px 0;
@@ -70,8 +74,9 @@
   white-space: nowrap;
   color: #231F20;
   font-size: 14px;
-  font-family: 'ITC Avant Garde Gothic';
+  font-family: itc-avant-garde-gothic-pro, Poppins, sans-serif;
 }
+
 .side_navbar li a:hover {
   text-decoration: underline;
   text-shadow: 0 0 1px #333;
@@ -94,6 +99,7 @@
   margin-top: 0;
   overflow-y: auto;
 }
+
 .ftr_navbar ul {
   list-style-type: none;
   margin: 0;
@@ -102,18 +108,21 @@
   justify-content: flex-end;
   white-space: nowrap;
 }
+
 .ftr_navbar li {
   display: inline-block;
   padding: 0 0 0 40px;
 }
+
 .ftr_navbar a {
   text-decoration: none;
   text-align: center;
   white-space: nowrap;
   color: #231F20;
   font-size: 14px;
-  font-family: 'ITC Avant Garde Gothic';
+  font-family: itc-avant-garde-gothic-pro, Poppins, sans-serif;
 }
+
 .ftr_navbar li a:hover {
   text-decoration: underline;
   font-weight: bold;
@@ -179,7 +188,7 @@
   text-decoration: none;
   color: #231F20;
   font-size: 14px;
-  font-family: 'ITC Avant Garde Gothic';
+  font-family: itc-avant-garde-gothic-pro, Poppins, sans-serif;
 }
 
 #nav_menu ul li a:hover {
@@ -215,16 +224,20 @@
   .main_navbar, .side_navbar, .nav_return {
     display: none;
   }
+
   #hamburger, #nav_menu {
     display: flex !important;
     visibility: visible !important;
   }
+
   .ftr_navbar {
     flex-direction: column;
   }
+
   .ftr_navbar ul {
     justify-content: flex-start;
   }
+
   .ftr_navbar li {
     padding: 30px 40px 0 0;
   }
