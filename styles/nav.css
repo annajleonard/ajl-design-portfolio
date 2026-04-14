@@ -93,6 +93,7 @@
 
 .ftr_navbar {
   flex: 1;
+  align-self: flex-start;
   bottom: auto;
   top: 0;
   right: 0;
