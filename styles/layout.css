@@ -163,6 +163,9 @@ body {
     font-weight: normal;
     white-space: nowrap;
 }
+.logo_signature_bullet {
+    color: #e25599;
+}
 .logo_container a,
 .ftr_logo_container a {
   text-decoration: none;
@@ -297,9 +300,6 @@ body {
     display: block;
     padding: 15px 0px;
   }
-  .logo_bullet {
-  	color: #e25599;
-}
   .menu_container, .ftr_container  {
     flex: 0;
     flex-direction: column;
