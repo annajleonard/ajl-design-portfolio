@@ -124,6 +124,9 @@ body {
     justify-content: flex-start;
     flex-wrap: wrap;
     flex-flow: row;
+    @media screen and (max-width: 1200px) {
+      width:;
+    }
 }
 
 .logo_container {
@@ -277,6 +280,13 @@ body {
     flex: 0;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .ftr_container  {
+    flex: 0;
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 480px) {
   .page_container {
     min-width: 375px;
@@ -292,7 +302,8 @@ body {
     grid-column: 1 / -1;
     grid-row: auto;
   }
-  .logo_container {
+  .logo_container,
+  .ftr_logo_container {
     display: block;
     padding: 15px;
   }
