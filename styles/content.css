@@ -336,4 +336,9 @@ video {
     .image_with_caption {
         max-width: 100%;
     }
+    img,
+    video {
+      max-width: 100%;
+      height: auto;
+    }
 }
