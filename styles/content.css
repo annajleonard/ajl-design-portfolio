@@ -149,7 +149,7 @@
 .text_section_container {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    gap: 0 0;
+    gap: 0 10;
     grid-row: auto;
     height: auto;
     width: auto;
@@ -190,6 +190,7 @@
     grid-column-start: 5;
     grid-column-end: 10;
 }
+
 .prototype-iframe {
     border: 1px solid rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -311,7 +312,7 @@ video {
 
 @media (max-width: 900px) {
     .contact-form__input {
-        width: 60%;
+        width: 80%;
     }
     .image_with_caption {
         max-width: 220px;
