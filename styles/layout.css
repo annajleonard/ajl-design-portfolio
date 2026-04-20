@@ -1,14 +1,27 @@
 @import url("https://use.typekit.net/rtb7zmy.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Libre+Caslon+Text&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: itc-avant-garde-gothic-pro, Poppins, sans-serif;
 }
 
 body {
   	margin: 0;
+	padding: 0;
   	line-height: normal;
     font-family: adobe-caslon-pro, Libre Caslon Text, serif;
+    overflow-x: hidden;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
 }
 
 /* div {
@@ -19,10 +32,12 @@ body {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(5, auto);
-  gap: 0px 0;
+  gap: 0;
   grid-row: auto;
   height: auto;
-  width: auto;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .hdr_left {
@@ -131,7 +146,7 @@ body {
 
 .logo_container {
     flex: 1;
-    padding: 80px 0px 70px 5px;
+    padding: 80px 0px 70px 0px;
     width: 100%;
 }
 
@@ -247,6 +262,21 @@ body {
     grid-column: 1 / -1;
     grid-row: auto;
   }
+  .hdr_mid {
+    padding: 0px 15px;
+  }
+  .mid_mid,
+  .bot_mid,
+  .footer_mid {
+      padding: 0px 15px 0px 15px;
+  }
+  .hdr_left, .hdr_right,
+  .banner,
+  .mid_left, .mid_right,
+  .bot_left, .bot_right,
+  .footer_left, .footer_right {
+    padding: 0px;
+  }
   .menu_container {
     flex: 0;
   }
@@ -260,9 +290,9 @@ body {
 }
 @media screen and (max-width: 480px) {
   .page_container {
-    min-width: 0px;
     grid-template-columns: 1fr;
-    max-width: 90%;
+    width: 100%;
+    max-width: 100%;
   }
   .hdr_left, .hdr_mid, .hdr_right,
   .banner,
@@ -271,16 +301,35 @@ body {
   .footer_left, .footer_mid, .footer_right {
     grid-column: 1 / -1;
     grid-row: auto;
+    min-width: 0;
+  }
+  .hdr_mid {
+    padding: 0px 15px 50px 15px;
   }
   .logo_container,
   .ftr_logo_container {
     display: block;
-    padding: 15px;
+    padding: 15px 0px;
   }
   .logo_signature{
     display: block;
     padding: 15px 0px;
   }
+/*  .header-logo-row,
+  .footer-logo-row {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .logo_signature {
+    width: auto;
+    max-width: 100%;
+    padding: 10px 0 0 0;
+  }
+  .logo_signature_name,
+  .logo_signature_title {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }*/
   .menu_container, .ftr_container  {
     flex: 0;
     flex-direction: column;

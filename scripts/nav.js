@@ -33,6 +33,51 @@ document.addEventListener('DOMContentLoaded', function() {
 
   setInterval(swapBanner, 7000);
 });
+
+// Fade swap for any image that opts in with data-fade-images.
+// Example:
+// <img src="first.webp" data-fade-images='["first.webp","second.webp"]'>
+document.addEventListener('DOMContentLoaded', function() {
+  const fadeTargets = document.querySelectorAll('img[data-fade-images]');
+  if (!fadeTargets.length) return;
+
+  const reduceMotion = window.matchMedia &&
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduceMotion) return;
+
+  fadeTargets.forEach(function(img) {
+    let images;
+    try {
+      images = JSON.parse(img.dataset.fadeImages || '[]');
+    } catch (e) {
+      console.warn('image fade: data-fade-images must be a valid JSON array.', e);
+      return;
+    }
+
+    if (!Array.isArray(images) || images.length < 2) return;
+
+    images.forEach(function(src) {
+      const preload = new Image();
+      preload.src = src;
+    });
+
+    const fadeDuration = Number(img.dataset.fadeDuration) || 1000;
+    const interval = Number(img.dataset.fadeInterval) || 4500;
+    let currentIndex = Math.max(images.indexOf(img.getAttribute('src') || ''), 0);
+
+    img.style.transition = 'opacity ' + fadeDuration + 'ms ease-in-out';
+    img.style.opacity = '1';
+
+    setInterval(function() {
+      img.style.opacity = '0';
+      setTimeout(function() {
+        currentIndex = (currentIndex + 1) % images.length;
+        img.src = images[currentIndex];
+        img.style.opacity = '1';
+      }, fadeDuration);
+    }, interval);
+  });
+});
 // Custom smooth scroll for side_navbar links and #sidehome (slower speed)
 document.addEventListener('DOMContentLoaded', function() {
   function customSmoothScrollTo(target) {
