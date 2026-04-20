@@ -315,21 +315,6 @@ body {
     display: block;
     padding: 15px 0px;
   }
-/*  .header-logo-row,
-  .footer-logo-row {
-    flex-wrap: wrap;
-    align-items: flex-start;
-  }
-  .logo_signature {
-    width: auto;
-    max-width: 100%;
-    padding: 10px 0 0 0;
-  }
-  .logo_signature_name,
-  .logo_signature_title {
-    white-space: normal;
-    overflow-wrap: anywhere;
-  }*/
   .menu_container, .ftr_container  {
     flex: 0;
     flex-direction: column;

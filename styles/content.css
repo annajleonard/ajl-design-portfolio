@@ -327,20 +327,18 @@ video {
     .project_left h5,
     .project_left h6 {
         white-space: normal;
-        /*width: 60%;*/
     }
     .project_left img {
-        /*width: 50%;*/
         height: auto;
     }
     .project_header h1 {
         white-space: normal;
-        /*width: 60%;*/
     }
     .project_right {
         grid-row-start: 3;
         grid-row-end: 3;
         grid-column-start: 1;
+        grid-column-end: 11;
     }
     .text_section {
         grid-column-start: 1;
@@ -360,11 +358,6 @@ video {
     .feature-row--reverse .feature-media {
         order: initial;
     }
-/*
-    .image_with_caption {
-        max-width: 220px;
-    }
-*/
     .works_container {
         grid-template-columns: 1fr;
     }
@@ -382,6 +375,47 @@ video {
         flex-direction: column;
         align-items: center;
     }
+    .project_container {
+        margin: 0 15px;
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .text_section_container {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .project_header,
+    .project_left,
+    .project_right {
+        grid-column: 1 / -1;
+        grid-row: auto;
+        min-width: 0;
+    }
+    .text_section {
+        grid-column: 1 / -1;
+        min-width: 0;
+    }
+    .project_header h1,
+    .project_left h1,
+    .project_left h2,
+    .project_left h3,
+    .project_right h1,
+    .project_right h2,
+    .project_right h3,
+    .project_left p,
+    .project_right p,
+    .text_section h1,
+    .text_section h2,
+    .text_section h3,
+    .text_section p {
+        white-space: normal;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+        max-width: 100%;
+    }
+    .project_header h1,
+    .text_section h1 {
+        font-size: clamp(1.8rem, 7vw, 2.5rem);
+        line-height: 1.2;
+    }
     .feature-media.image_section_container {
         justify-content: stretch;
     }
@@ -392,11 +426,6 @@ video {
         height: auto;
         max-height: none;
     }
-/*
-    .image_with_caption {
-        max-width: 100%;
-    }
-*/
     img,
     video {
       max-width: 100%;
