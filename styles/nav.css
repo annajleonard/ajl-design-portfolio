@@ -184,7 +184,7 @@
   text-decoration: none;
   text-align: center;
   white-space: nowrap;
-  color: #231F20;
+  color: #929292;
   font-size: 14px;
   font-family: itc-avant-garde-gothic-pro, Poppins, sans-serif;
 }
@@ -196,7 +196,8 @@
 
 .side_navbar li a:hover {
   text-decoration: underline;
-  text-shadow: 0 0 1px #333;
+  text-weight: bold;
+  color: #231F20;
 }
 
 .side_navbar ul {
