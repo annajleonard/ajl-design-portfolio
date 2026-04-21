@@ -153,13 +153,32 @@
 }
 .feature-row {
     display: grid;
-    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
     align-items: center;
     gap: 50px;
     margin-bottom: 50px;
 }
 .feature-row--reverse {
+}
+.frow-11 {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+.frow-12 {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+}
+.frow-13 {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
+}
+.frow-21 {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+}
+.frow-23 {
     grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+}
+.frow-31 {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 1fr);
+}
+.frow-32 {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
 }
 .feature-row--reverse .feature-text {
     order: 2;
