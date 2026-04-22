@@ -69,6 +69,11 @@
     min-height: 12rem;
     resize: vertical;
 }
+.h230 img,
+.h230 video {
+    height: 230px;
+    width: auto;
+}
 .h250 img,
 .h250 video {
     height: 250px;

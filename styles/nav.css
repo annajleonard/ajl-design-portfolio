@@ -77,6 +77,22 @@
   padding: 0 0 0 40px;
 }
 
+.ftr_navbar li a.active {
+  color: #E25599;
+  font-weight: bold;
+  text-weight: bold;
+}
+.ftr_navbar li a {
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  color: #231F20;
+  font-size: 14px;
+  font-family: itc-avant-garde-gothic-pro, Poppins, sans-serif;
+  vertical-align: bottom;
+  bottom: 0;
+}
+
 .ftr_navbar li a:hover {
   text-decoration: underline;
   font-weight: bold;
@@ -124,7 +140,14 @@
   margin-top: auto;
   gap: 40px;
 }
-
+.main_navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  white-space: nowrap;
+}
 .main_navbar li {
   display: inline-block;
   padding: 0 0 0 40px;
@@ -137,6 +160,8 @@
   color: #231F20;
   font-size: 14px;
   font-family: itc-avant-garde-gothic-pro, Poppins, sans-serif;
+  vertical-align: bottom;
+  bottom: 0;
 }
 
 .main_navbar li a.active {
@@ -148,15 +173,6 @@
 .main_navbar li a:hover {
   text-decoration: underline;
   text-weight: bold;
-}
-
-.main_navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: flex-end;
-  white-space: nowrap;
 }
 
 .nav_return {
@@ -184,7 +200,7 @@
   text-decoration: none;
   text-align: center;
   white-space: nowrap;
-  color: #231F20;
+  color: #929292;
   font-size: 14px;
   font-family: itc-avant-garde-gothic-pro, Poppins, sans-serif;
 }
@@ -196,7 +212,8 @@
 
 .side_navbar li a:hover {
   text-decoration: underline;
-  text-shadow: 0 0 1px #333;
+  text-weight: bold;
+  color: #231F20;
 }
 
 .side_navbar ul {
