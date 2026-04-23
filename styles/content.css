@@ -1,17 +1,4 @@
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    width: 100%;
-    max-width: 42rem;
-}
-.contact-form__button {
-    align-self: flex-start;
-    padding: 0.85rem 1.5rem;
-    border: none;
-    border-radius: 999px;
-    background-color: #1f1f1f;
-    color: #ffffff;
+
     font: inherit;
     font-weight: 600;
     cursor: pointer;
@@ -69,6 +56,7 @@
     min-height: 12rem;
     resize: vertical;
 }
+
 .h230 img,
 .h230 video {
     height: 230px;
@@ -468,5 +456,35 @@ video {
     video {
       max-width: 100%;
       height: auto;
+    }
+}
+
+.two-col-media {
+    width: 100%;
+    max-width: 100%;
+    margin: 24px auto;
+    display: flex;
+    gap: 24px;
+}
+
+.two-col-media__col {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0px;
+}
+
+.two-col-media__col .image_section_container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 0px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .two-col-media {
+        grid-template-columns: 1fr;
     }
 }
