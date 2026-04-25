@@ -71,6 +71,11 @@
     height: 250px;
     width: auto;
 }
+.h270 img,
+.h270 video {
+    height: 270px;
+    width: auto;
+}
 .h300 img,
 .h300 video {
     height: 300px;
