@@ -81,6 +81,11 @@
     height: 350px;
     width: auto;
 }
+.h380 img,
+.h380 video {
+    height: 380px;
+    width: auto;
+}
 .h400 img,
 .h400 video {
     height: 400px;
