@@ -167,7 +167,8 @@ p.copyright {
   padding: 0px;
   width: 126px;
   height: 122px;
-  object-fit: cover;
+  object-fit: contain;
+  vertical-align: bottom;
 }
 
 .logo_signature {
