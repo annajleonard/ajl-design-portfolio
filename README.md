@@ -1,25 +1,25 @@
 # Anna Leonard - Design Portfolio
 
-This repository contains Anna Leonard's portfolio website, including UX/UI case studies and graphic design project pages.
+Static portfolio site for Anna Leonard, featuring UX/UI case studies and graphic design projects.
 
 ## Overview
 
-The site is a static frontend project built with vanilla HTML, CSS, and JavaScript.
-
-- Responsive layout and navigation (desktop + hamburger menu)
-- Project filtering on the home page
-- Long-form case study pages with image/video galleries
+- Built with vanilla HTML, CSS, and JavaScript (no framework/build step)
+- Responsive layout with desktop navigation and hamburger menu
+- Home page project filtering for UX/UI vs Graphic Design work
+- Long-form project pages with image and video sections
 
 ## Site Pages
 
-- `index.html` - home / project index
+- `index.html` - home page and filterable project grid
 - `about.html` - about page
-- `contact.html` - contact form
+- `contact.html` - contact page
 
 ### UX/UI pages
 
 - `designs/uxui/breakstigma.html`
 - `designs/uxui/creativitymap.html`
+- `designs/uxui/gooddog.html`
 - `designs/uxui/luminousdepths.html`
 - `designs/uxui/mesozoic.html`
 - `designs/uxui/netflix.html`
@@ -56,12 +56,56 @@ The site is a static frontend project built with vanilla HTML, CSS, and JavaScri
 └── icons/
 ```
 
-## Maintenance Notes
+## Filtering Behavior (Home Page)
 
-- Keep media and image references relative to each page location.
-- Use shared CSS utilities (for example in `styles/content.css`) instead of inline styles when possible.
-- Keep accessibility attributes in place (`lang` on `html`, `alt` on `img`).
-- Most page imagery is now served as `.webp` for performance.
+Filtering logic lives in `scripts/filter.js` and targets `.works` items in `index.html`.
+
+- Each card has a `data-groups` attribute (for example `"UX/UI DESIGN"` or `"GRAPHIC DESIGN"`)
+- Nav links for those two categories pass `?filter=...` to `index.html`
+- On load, `filterWorks(...)` reads the query value and shows/hides cards by group
+- Non-filter nav links (About, Contact) behave as normal page navigation
+
+## Media Guidelines
+
+- Prefer `.webp` for homepage and project imagery when possible
+- Keep file paths relative to each page location (for nested pages this is usually `../../...`)
+- Keep `alt` text meaningful for accessibility
+- Reuse existing section wrappers in `styles/content.css` for consistency:
+  - `.text_section_container`
+  - `.image_section_container`
+  - `.image_section_container_captions`
+  - `.two-col-media` (used by longer case-study layouts)
+
+### Common Image Commands (ImageMagick)
+
+```bash
+# Resize existing WEBP to exact dimensions (may distort)
+magick images/home/gooddog.webp -resize 591x370! images/home/gooddog.webp
+
+# Convert PNG to WEBP with exact dimensions
+magick images/home/narniacovers.png -resize 591x370! images/home/narniacovers.webp
+
+# Confirm dimensions
+magick identify images/home/gooddog.webp
+```
+
+## Footer Notes
+
+Shared footer structure appears across pages and uses:
+
+- `.ftr_container` as the main footer flex wrapper
+- `.ftr_logo_container` for logo + signature
+- `.ftr_navbar` for social/contact links
+- `.ftr_copyright` for legal text when present
+
+If footer links appear clipped/hidden, check `styles/layout.css` and `styles/nav.css` for `flex`, `overflow`, and wrapping rules.
+
+## Editing Notes
+
+- Keep nav and footer structures consistent across pages
+- Avoid inline styles when a shared class exists
+- Preserve accessibility attributes (`lang`, `alt`, link labels)
+- Validate relative paths whenever moving or renaming media files
 
 ## Author
 

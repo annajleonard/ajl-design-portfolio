@@ -24,6 +24,15 @@ body {
   overflow-x: clip;
 }
 
+p.copyright {
+    font-size: 14px;
+    color: #231f20;
+    font-family: adobe-caslon-pro, Libre Caslon Text, serif;
+    text-align: left;
+    margin: 0px;
+    padding: 40px 0px 40px 0px;
+}
+
 /* div {
   border: 1px dotted pink;
 } */
@@ -266,9 +275,11 @@ body {
     padding: 0px 15px;
   }
   .mid_mid,
-  .bot_mid,
-  .footer_mid {
+  .bot_mid {
       padding: 0px 15px 0px 15px;
+  }
+  .footer_mid {
+    padding: 30px 15px 90px 15px;
   }
   .hdr_left, .hdr_right,
   .banner,
