@@ -166,8 +166,8 @@ p.copyright {
 .logo_icon {
   padding: 0px;
   width: 126px;
-  height: 122px;
-  object-fit: contain;
+  height: 120px;
+  object-fit: cover;
   vertical-align: bottom;
 }
 
@@ -209,7 +209,9 @@ p.copyright {
 .menu_container {
     flex: 1;
     padding: 0px 0px 70px 0px;
-    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .ftr_container {
