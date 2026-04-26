@@ -317,6 +317,19 @@ video {
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    transition: opacity 0.24s ease, transform 0.24s ease;
+    will-change: opacity, transform;
+}
+.works-leaving,
+.works-entering {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+    pointer-events: none;
+}
+.works-hidden {
+    display: none;
 }
 .works a {
     display: flex;
@@ -567,5 +580,18 @@ video {
     video {
       max-width: 100%;
       height: auto;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .works {
+        transition: none;
+        transform: none;
+    }
+
+    .works-leaving,
+    .works-entering {
+        opacity: 1;
+        transform: none;
     }
 }

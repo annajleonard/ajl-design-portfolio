@@ -76,19 +76,6 @@ Filtering logic lives in `scripts/filter.js` and targets `.works` items in `inde
   - `.image_section_container_captions`
   - `.two-col-media` (used by longer case-study layouts)
 
-### Common Image Commands (ImageMagick)
-
-```bash
-# Resize existing WEBP to exact dimensions (may distort)
-magick images/home/gooddog.webp -resize 591x370! images/home/gooddog.webp
-
-# Convert PNG to WEBP with exact dimensions
-magick images/home/narniacovers.png -resize 591x370! images/home/narniacovers.webp
-
-# Confirm dimensions
-magick identify images/home/gooddog.webp
-```
-
 ## Footer Notes
 
 Shared footer structure appears across pages and uses:
