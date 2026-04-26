@@ -1,6 +1,6 @@
 // Fade transition for banner image
 // Opt in per page by adding data-banner-images on the .banner_img element:
-//   <img class="banner_img" src="first.png" data-banner-images='["first.png","second.png"]'>
+//   <img class="banner_img" src="first.webp" data-banner-images='["first.webp","second.webp"]'>
 // Omit the attribute (or provide fewer than 2 images) to disable the transition.
 document.addEventListener('DOMContentLoaded', function() {
   const bannerImg = document.querySelector('.banner_img');
