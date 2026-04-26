@@ -61,6 +61,7 @@
   right: 0;
   margin-top: 0;
   overflow-y: auto;
+  height: 122px;
 }
 
 .ftr_navbar a {
@@ -89,7 +90,7 @@
   color: #231F20;
   font-size: 14px;
   font-family: itc-avant-garde-gothic-pro, Poppins, sans-serif;
-  vertical-align: bottom;
+  vertical-align: top;
   bottom: 0;
 }
 
@@ -228,14 +229,14 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .ftr_navbar {
+  /*.ftr_navbar {
      padding: 0 15px;
-  }
+  }*/
 
-  .ftr_navbar li,
+  /*.ftr_navbar li,
   .main_navbar li {
-    padding: 10px 0 0 0;
-  }
+    padding: 0px 0 0 0;
+  }*/
 
   .ftr_navbar ul,
   .main_navbar ul {
@@ -270,6 +271,10 @@
   .ftr_navbar {
     display: block;
     padding: 15px 15px 15px 0px;
+  }
+  .ftr_navbar li {
+    display: block;
+    padding: 10px 0 0 0;
   }
   .ftr_navbar ul {
     align-items: flex-start;
