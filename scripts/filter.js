@@ -1,6 +1,10 @@
 // Filter works based on category selection
 function filterWorks(category) {
-    const worksItems = Array.from(document.querySelectorAll('.works'));
+    const grid = document.getElementById('works_grid');
+    if (!grid) {
+        return;
+    }
+    const worksItems = Array.from(grid.querySelectorAll('.works'));
     if (worksItems.length === 0) {
         return;
     }
@@ -147,8 +151,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Apply URL filter as soon as DOM is ready to avoid image-flash on full page load.
     const urlParams = new URLSearchParams(window.location.search);
     const filter = urlParams.get('filter');
-    const hasWorksGrid = document.querySelector('.works_container .works');
-    if (hasWorksGrid) {
+    if (document.getElementById('works_grid')) {
         filterWorks(filter || null);
     }
 });
